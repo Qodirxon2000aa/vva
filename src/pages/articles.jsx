@@ -38,7 +38,7 @@ const Articles = () => {
 							<Logo width={46} />
 						</div>
 					</div>
-
+					<br />
 					<div className="articles-main-container">
 						<div className="title articles-title">
 							{INFO.articles.title}
@@ -47,7 +47,7 @@ const Articles = () => {
 						<div className="subtitle articles-subtitle">
 							{INFO.articles.description}
 						</div>
-
+						<br />
 						<div className="articles-container">
 							<div className="articles-wrapper">
 								{myArticles.map((article, index) => (
@@ -57,7 +57,7 @@ const Articles = () => {
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
+											
 											title={article().title}
 											description={article().description}
 											link={"/article/" + (index + 1)}
